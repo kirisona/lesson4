@@ -57,7 +57,7 @@ list.setAttribute('class', 'list');
 
 // 2. Найти в коде ссылку, находящуюся после списка `ul`, и добавить `id=link`
 
-let linkLast = document.querySelector('ul').nextElementSibling.nextElementSibling;
+let linkLast = document.querySelector('ul ~ a');
 
 console.log(linkLast.setAttribute('id', 'link'));
 
